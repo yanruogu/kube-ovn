@@ -25,6 +25,7 @@ func main() {
 	// must ensure that the goroutine does not jump from OS thread to thread
 	runtime.LockOSThread()
 
+	fmt.Println("hahahahahahahah")
 	funcs := skel.CNIFuncs{
 		Add: cmdAdd,
 		Del: cmdDel,
